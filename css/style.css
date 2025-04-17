@@ -71,10 +71,15 @@ body {
     border: 3px solid;
 }
 
-.my-profile, #my-skill{
+.my-profile{
     background-color: rgb(169, 222, 218);
     border-radius: 5px;
     padding: 20px;
+}
+
+.my-profile ul{
+  margin: 0;
+  padding-left: 0;
 }
 
 #visi-misi {
@@ -82,6 +87,11 @@ body {
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+}
+
+#visi-misi ul {
+  margin: 0;
+  padding-left: 0;
 }
 
 
@@ -189,7 +199,7 @@ body {
     .form {
       flex-direction: column;
       display: flex;
-    align-items: center;
+      align-items: center;
     }
   
     .form button {
@@ -201,6 +211,8 @@ body {
       width: 100%;
       height: auto;
     }
+
+
   }
   
   @media (max-width: 768px) {
@@ -219,6 +231,7 @@ body {
       margin: 5px 0;
       border-bottom: 1px solid;
     }
+
   
     #home-section {
       flex-direction: column;
