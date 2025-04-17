@@ -19,7 +19,6 @@ body {
 }
 
 #logo img {
-    background-image: url(../assets/logo.jpg);
     height:50px;
     width: 50px;
     background-size: cover;
@@ -59,8 +58,8 @@ body {
 }
 
 
-/*Our-Profile-Section*/
-#our-profile-section {
+/*my-Profile-Section*/
+#my-profile-section {
     margin: 20px;
     text-align: center;
 }
@@ -86,7 +85,7 @@ body {
 }
 
 
-#our-profile-section ul li{
+#my-profile-section ul li{
     text-decoration: none;
     list-style-type: none;
 }
@@ -226,7 +225,7 @@ body {
       text-align: center;
     }
   
-    #our-profile-section {
+    #my-profile-section {
       margin: 10px;
     }
   
