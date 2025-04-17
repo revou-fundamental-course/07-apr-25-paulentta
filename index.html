@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Paulenta Company</title>
-        <link rel="stylesheet" href="c:\vscode\RevoU\07-apr-25-paulentta\css\style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Paulenta Silvania</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         <!--Header content-->
         <header class="header">
            <!--Logo-->
-        <div class="logo"></div>
+           <div id="logo">
+            <img src="../assets/logo.png" alt="Logo">
+           </div>
 
          <!--Navigasi-->
         <nav>
-            <a href="home-section">Home</a>
-            <a href="our-profile-section">Our Profile</a>
-            <a href="portfolio-section">Portfolio</a>
-            <a href="message-us-section">Message Us</a>
+            <a href="#home-section">Home</a>
+            <a href="#our-profile-section">My Profile</a>
+            <a href="#message-us-section">Message Me</a>
         </nav>  
         </header>
 
@@ -25,29 +31,103 @@
         <main>
             <!--home-section-->
             <section id="home-section">
-                <h3>Hai, Welcome To My website</h3>
-                <p>Ini adalah website pertama saya</p>
-                <div class="gambar1">  </div>
+                <div class="text-home">
+                    <h3>Hai, <span id="nama-user"></span>! Welcome To My website</h3>
+                    <p>Ini adalah Website profile saya sebagai Mahasiswa Informatika di UPN "Veteran" Jawa Timur</p>
+                    <p>Saat ini saya masih dalam tahap belajar dan terus mengembangkan skill di bidang desain digital, UI/UX, serta pengembangan web. Walaupun saya belum memiliki banyak karya yang bisa ditampilkan, saya antusias untuk terus belajar dan siap menerima tantangan baru ke depannya.</p>
+            </div>
+
+            <div class="gambar1"> 
+                <img src="../assets/gambar1.jpg" alt="gambar1">
+            </div>
+                
             </section>
 
             <!--our-profile-section-->
             <section id="our-profile-section">
-                <h2>Our Profile</h2>
+                <h2>My Profile</h2>
+
+                <div class="my-profile">
+                    <div id="photoprofile">
+                     <img src="../assets/profile.jpg" alt="Foto Profile">
+                    </div>
+
+                    <!--Perkenalan-->
+                    <p>Halo! Saya <strong>Paulenta</strong>, seorang <em>mahasiswa</em> di UPN "Veteran Jawa Timur".</p>
+                    <p>Saat ini, saya sedang menempuh pendidikan di Program Studi Informatika, di mana saya banyak belajar tentang pengembangan perangkat lunak, pemrograman, desain antarmuka, serta solusi berbasis teknologi informasi.</p>
+                    <p>Saya memiliki ketertarikan dalam dunia desain digital dan teknologi, khususnya di bidang UI/UX, pengembangan website, serta desain media sosial. Saya senang mengeksplorasi ide-ide kreatif dan menggabungkannya dengan pendekatan fungsional untuk menciptakan pengalaman pengguna yang menarik dan efektif.</p>
+
+
+                    <!--Skill-->
+                    <h3>My Skill</h3>
+                        <ul>
+                            <li>Dasar-dasar Front-end (HTML, CSS, JavaScript)</em></li>
+                            <li>UI/UX Design (Figma, Wireframing & Prototyping)</em></li>
+                            <li>Database (MySQL)</li>
+                            <li>Programming (python, c)</li>
+                        </ul> 
+                </div>
+
+                
+             <!--Visi dan Misi-->
+             <h2>Visi & Misi</h2>
+                    <div id="visi-misi">
+                        <h3>Visi</h3>
+                        <p>Menjadi pribadi yang terus berkembang dalam dunia teknologi dan desain digital, serta mampu memberikan solusi kreatif dan berdampak melalui karya-karya inovatif.</p>
+
+                        <h3>Misi</h3>
+                        <ul>
+                            <li>Terus belajar dan mengikuti perkembangan teknologi terkini.</li>
+                            <li>Mengasah kemampuan dalam bidang desain UI/UX, pengembangan web, dan teknologi informasi.</li>
+                        </ul>
+
+                    </div>
+
             </section>
 
-            <!--portfolio-section-->
-            <section id="portfolio-section">
-                <h2>Portfolio</h2>
-            </section>
 
-            <!--portfolio-section-->
+            <!--message-us-section-->
             <section id="message-us-section">
-                <h2>Message Us</h2>
+                <h2> Hubungi Saya</h2>
+
+                <!--Form-->
+                <div class="form" >
+                   <form id="form">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label>Jenis Kelamin :</label>
+                    <input type="radio" name="gender" id="male" value="Laki-Laki">Laki-Laki
+                    <input type="radio" name="gender" id="female" value="Perempuan">Perempuan <br>
+
+                    <label for="phone">Nomor Telepon :</label>
+                    <input type="tel" id="phone" name="phone" required> <br>
+
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required> <br>
+
+                    <label for="message">Pesan :</label>
+                    <textarea id="message"  name="message" rows="5" cols="50"></textarea><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <!--Hasil Pengisian Form-->
+                <div id="result">
+                    <p><em>Pesan kamu akan tampil disini....</em></p>
+                </div>  
+                </div>
             </section>
 
         </main>
 
         <!--Footer content-->
-        <footer></footer>
+        <footer>
+            <div class="footer-bottom">
+                <p>© 2025 Paulenta Silvania. All rights reserved.</p>
+              </div>
+        </footer>
+
+        <script src="js/script.js"></script>
     </body> 
 </html>
